@@ -73,3 +73,25 @@ print(f"O'Tooley: {percent_otooley:.3%} ({votes_for_otooley})")
 print(f"---------------------------")
 print(f"The Winner Is: {name_of_winner}")
 print(f"---------------------------")
+
+
+#delegating what file to write edited data to
+result_voter_file = os.path.join("../PyPoll/Analysis/election_data_revised.txt")
+
+
+#open the file as a text file
+with open(result_voter_file, 'w',) as txtfile:
+
+
+    #write the data in new format
+    txtfile.write(f"Election Results\n")
+    txtfile.write(f"--------------------------\n")
+    txtfile.write(f"Total Votes: {total_votes}\n")
+    txtfile.write(f"--------------------------\n")
+    txtfile.write(f"Kahn: {percent_khan:.3%} ({votes_for_khan})\n")
+    txtfile.write(f"Correy: {percent_correy:.3%} ({votes_for_correy})\n")
+    txtfile.write(f"Li: {percent_li:.3%} ({votes_for_li})\n")
+    txtfile.write(f"O'Tooley: {percent_otooley:.3%} ({votes_for_otooley})\n")
+    txtfile.write(f"---------------------------\n")
+    txtfile.write(f"The Winner Is: {name_of_winner}\n")
+    txtfile.write(f"---------------------------\n")
