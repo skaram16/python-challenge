@@ -46,7 +46,7 @@ with open(budget_data_path) as budget_data_file:
         net_revenue = net_revenue + int(row[1])
 
         #calculate changes for months
-        revenue_change = int(row[1] - previous_row)
+        revenue_change = int(row[1]) - previous_row
         change_monthly.append(revenue_change)
         previous_row = int(row[1])
         monthly_count.append(row[0])
