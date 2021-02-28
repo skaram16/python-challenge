@@ -68,13 +68,13 @@ with open(budget_data_path) as budget_data_file:
     lowest = min(change_monthly)
 
 #print all values
-print("Financial Analysis")
-print("-------------------------")
-print("Total Months: {total_months}")
-print("Total Amount: ${net_revenue}")
-print("Average Change: ${average_change}")
-print("Greatest Increase In Profits:, {month_increase}, (${highest})")
-print("Greatest Decrease In Profits:, {month_decrease}, (${lowest})")
+print(f"Financial Analysis")
+print(f"-------------------------")
+print(f"Total Months: {total_months}")
+print(f"Total Amount: ${net_revenue}")
+print(f"Average Change: ${average_change}")
+print(f"Greatest Increase In Profits:, {month_increase}, (${highest})")
+print(f"Greatest Decrease In Profits:, {month_decrease}, (${lowest})")
 
 #delegating what file to write edited data to
 output_file = os.path.join("../PyBank/Resources/budget_data_revised.txt")
@@ -83,10 +83,10 @@ output_file = os.path.join("../PyBank/Resources/budget_data_revised.txt")
 with open(output_file, 'w',) as txtfile:
 
     #write the data in new format
-    txtfile.write("Financial Analysis\n")
-    txtfile.write("---------------------\n")
-    txtfile.write("Total Months: {total_months}\n")
-    txtfile.write("Total: ${net_revenue}\n")
-    txtfile.write("Average Change: ${average_change}\n")
-    txtfile.write("Greatest Increase In Profits:, {month_increase}, (${highest})\n")
-    txtfile.write("Greatest Decrease In Profits:, {month_decrease}, (${lowest})\n")
+    txtfile.write(f"Financial Analysis\n")
+    txtfile.write(f"---------------------\n")
+    txtfile.write(f"Total Months: {total_months}\n")
+    txtfile.write(f"Total: ${net_revenue}\n")
+    txtfile.write(f"Average Change: ${average_change}\n")
+    txtfile.write(f"Greatest Increase In Profits:, {month_increase}, (${highest})\n")
+    txtfile.write(f"Greatest Decrease In Profits:, {month_decrease}, (${lowest})\n")
