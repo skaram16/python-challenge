@@ -77,9 +77,9 @@ print(f"Greatest Increase In Profits:, {month_increase}, (${highest})")
 print(f"Greatest Decrease In Profits:, {month_decrease}, (${lowest})")
 
 #delegating what file to write edited data to
-output_file = os.path.join("../PyBank/Resources/budget_data_revised.txt")
+output_file = os.path.join("../PyBank/Analysis/budget_data_revised.txt")
 
-#open the file using a mode that specifies the variable and contents
+#open the file as a text file
 with open(output_file, 'w',) as txtfile:
 
     #write the data in new format
